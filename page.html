@@ -1,13 +1,110 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
  <title>DailyProblem</title>
-</head>
-<body style="background-color:powderblue;" >
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, inital-scale=1">
+ <style>
 
-<h1 style="color:blue;font-family:verdana;font-size:300%;text-align:center" >Daily Interview Pro</h1>
-<p style="background-color:tomato;font-family:courier;font-size:300%;" > practicing daily interview problems made by TechLead.</p>
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Style the header */
+header {
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    font-size: larger;
+    color: bisque;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: fit-content;
+    height: min-content;
+    background: chartreuse;
+    padding: 20px;
+
+}
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: disc;
+    padding: 0%;
+}
+
+article {
+    float: left;
+    padding: 30px;
+    width: 70%;
+    background-color:chocolate ;
+    height: 300px;
+}
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* style the footer */
+footer {
+    background-color: darkgreen;
+    padding: 20px;
+    text-align: center;
+    color: darkorchid;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ </style>
+</head>
+
+<body >
+
+<header > <h1  >Daily Interview Pro</h1> </header>
+<p  > practicing daily interview problems made by TechLead.</p>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">1st proplem</li>
+            <li><a href="#">2st proplem</li>
+            <li><a href="#">3st proplem</li>
+            <li><a href="#">4st proplem</li>
+            <li><a href="#">5st proplem</li>
+            <li><a href="#">6st proplem</li>
+            <li><a href="#">7st proplem</li>
+            <li><a href="#">8st proplem</li>
+            <li><a href="#">10st proplem</li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>code interviwe problems</h1>
+        <p>
+            in this website we will discuss example for interview
+            question that can be asked by big companiese 
+        </p>
+        <p> 
+            big companiese like 
+        </p>
+        <p>
+            google / apple / uber / microsoft
+        </p>
+
+    </article>
+</section>
 
 <details> 
     <summary> details </summary>
@@ -22,10 +119,11 @@
 </blockquote>
 </details>
 
+<footer>
 <h3>1st problem</h3>
 <p>First and Last Indices of an Element in a Sorted Array </p>
 <p>asked by AirBNB:</p>
-
+</footer>
 
 <dl>
 
@@ -61,8 +159,10 @@
 
 </p>
 
-<h3>2nd proplem</h3>
+<footer><h3>2nd proplem</h3>
 <p> Arithmetic Binary asked by Apple </p>
+
+</footer>
 
 <dl>
 <dt> you are given a binary tree representation of an Arithmetic expression
