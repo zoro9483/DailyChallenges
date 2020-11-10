@@ -168,55 +168,56 @@ footer {
 <p> Arithmetic Binary asked by Apple </p>
 
 </footer>
-<p>
-<dl>
-<dt> <br>you are given a binary tree representation of an Arithmetic expression
-    <br>  in this tree, each leaf is an interger value,,and a non-leaf node is one of the four 
-    <br>  operations:  '+', '-', '*', or '/'.
-    <br>  Write a function that takes this tree and evaluates the expression.
-</dt>
-<dt>Example:</dt>
-<dt>
-    <br>    *
-    <br>  / \
-    <br>  +    +
-   <br> / \  / \
-  <br> 3  2  4  5
+
+<pre>
+      you are given a binary tree representation of an Arithmetic expression
+      in this tree, each leaf is an interger value,,and a non-leaf node is one of the four 
+     operations:  '+', '-', '*', or '/'.
+      Write a function that takes this tree and evaluates the expression.
+
+</pre>
+
+<pre>
+Example:
+
+      *
+     / \
+     +    +
+  / \  / \
+  3  2  4  5
   
-  <br> This is a representation of the expression (3 + 2) * (4 + 5), and should return 45.
+   This is a representation of the expression (3 + 2) * (4 + 5), and should return 45.
   
-  <br> Here's a starting point:
+  Here's a starting point:
   
-  <br>  class Node:
-  <br>def __init__(self, val, left=None, right=None):
-   <br>  self.val = val
-     <br> self.left = left
-     <br> self.right = right
+    class Node:
+  def __init__(self, val, left=None, right=None):
+     self.val = val
+     self.left = left
+      self.right = right
    
-     <br> PLUS = "+"
-  <br> MINUS = "-"
-  <br> TIMES = "*"
-  <br> DIVIDE = "/"
+      PLUS = "+"
+   MINUS = "-"
+   TIMES = "*"
+   DIVIDE = "/"
+
+   def evaluate(root):
+  # Fill this in.
    
-  <br> def evaluate(root):
-  <br> # Fill this in.
-   
-   <br> tree = Node(TIMES)
-  <br> tree.left = Node(PLUS)
-  <br>tree.left.left = Node(3)
-  <br> tree.left.right = Node(2)
-  <br> tree.right = Node(PLUS)
-  <br> tree.right.left = Node(4)
-  <br>tree.right.right = Node(5)
-  <br> print evaluate(tree)
-  <br> # 45
+    tree = Node(TIMES)
+   tree.left = Node(PLUS)
+  tree.left.left = Node(3)
+   tree.left.right = Node(2)
+   tree.right = Node(PLUS)
+   tree.right.left = Node(4)
+  tree.right.right = Node(5)
+  print evaluate(tree)
+   # 45
   
-</dt>
-</dl>
-</p>
-<hr>
+</pre>
 
 <article>
+
 <h1>3st problem</h1>
 <h2>Tree Serialization asked by Apple:</h2>
 <h3>You are given the root of a binary tree. You need to implement 2 functions:
@@ -274,144 +275,37 @@ For this problem, often you will be asked to design your own serialization forma
 </P>
 </article>
 
-<hr>
-
-<article>
+<footer>
 <h1>4th problem</h1>
 <h2>Reverse a Linked List</h2>
-<h3>asked by Google:</h3>
-<p>Given a singly-linked list, reverse the list. This can be done iteratively or recursively. Can you</p>
-<p>get both solutions?</p>
-<p>Example:</p>
-
-<p>
-    <br>Input: 4 -> 3 -> 2 -> 1 -> 0 -> NULL
-    <br>Output: 0 -> 1 -> 2 -> 3 -> 4 -> NULL
-    <br>class ListNode(object):
-    <br>def __init__(self, x):
-    <br>  self.val = x
-    <br>  self.next = None
-     
-    <br> # Function to print the list
-    <br> def printList(self):
-    <br>  node = self
-    <br> output = ''
-    <br>  while node != None:
-    <br>    output += str(node.val)
-    <br>    output += " "
-    <br>   node = node.next
-    <br>  print(output)
-     
-       <br> # Iterative Solution
-     <br> def reverseIteratively(self, head):
-     <br>   # Implement this.
-     
-       <br># Recursive Solution     
-     <br>def reverseRecursively(self, head):
-     <br> # Implement this.
-     
-       <br># Test Program
-       <br># Initialize the test list:
-       <br>testHead = ListNode(4)
-       <br>node1 = ListNode(3)
-       <br>testHead.next = node1
-       <br>node2 = ListNode(2)
-       <br>node1.next = node2
-       <br>node3 = ListNode(1)
-       <br>node2.next = node3
-       <br>testTail = ListNode(0)
-       <br>node3.next = testTail
-     
-       <br>print("Initial list: ")
-       <br>testHead.printList()
-       <br># 4 3 2 1 0
-       <br>testHead.reverseIteratively(testHead)
-       <br>#testHead.reverseRecursively(testHead)
-    <br>print("List after reversal: ")
-    <br>testTail.printList()
-    <br> # 0 1 2 3 4
-    
-</p>
-</article>
-
-<footer>
-    <h1>5th problem </h1>
-     <h2> Validate Balanced Parentheses </h2>
-     <h3> asked by Uber: </h3>
-</footer>
-
-<article>
-<p> Imagine you are building a compiler. Before running any code,
-     the compiler must check that the parentheses in the program are balanced.
-      Every opening bracket must have a corresponding closing bracket. 
-      We can approximate this using strings.
-</p>
-
-<p> Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
-     determine if the input string is valid.
-</p>
-<p>
-    An input string is valid if:
-
-</p>
-<p> - Open brackets are closed by the same type of brackets. </p>
-<p>
-    - Open brackets are closed in the correct order.
-</p>
-<p>
-    - Note that an empty string is also considered valid.
-
-</p>
-<p>
-
-    <br>Example:
-    <br>Input: "((()))"
-    <br>Output: True
-    
-    <br>Input: "[()]{}"
-    <br>Output: True
-    
-    <br>Input: "({[)]"
-    <br>Output: False
-    <br>class Solution:
-    <br>def isValid(self, s):
-    <br>  # Fill this in.
-     
-       <br># Test Program
-    <br>s = "()(){(())"
-    <br># should return False
-    <br>print(Solution().isValid(s))
-     
-    <br>s = ""
-    <br># should return True
-    <br>print(Solution().isValid(s))
-     
-    <br> s = "([{}])()"
-    <br> # should return True 
-    <br>  print(Solution().isValid(s))<br>
-    
-
-</p>
-
-</article>
-
-<footer>
-    <h1>6th problem </h1>
-     <h2>Reverse a Linked List </h2>
-     <h3> asked by Google: </h3>
-</footer>
-
-<footer>
-    <h1>7th problem </h1>
-     <h2>  Full Binary Tree </h2>
-     <h3> asked by Google: </h3>
+<h3> asked by Google: </h3>
 </footer>
 
 
 <footer>
-    <h1>8th problem </h1>
-     <h2>  Full Binary Tree </h2>
-     <h3> asked by Google: </h3>
+<h1>5th problem </h1>
+<h2> Validate Balanced Parentheses </h2>
+<h3> asked by Uber: </h3>
+</footer>
+
+
+<footer>
+<h1>6th problem </h1>
+<h2>Reverse a Linked List </h2>
+<h3> asked by Google: </h3>
+</footer>
+
+<footer>
+<h1>7th problem </h1>
+<h2>  Full Binary Tree </h2>
+<h3> asked by Google: </h3>
+</footer>
+
+
+<footer>
+<h1>8th problem </h1>
+<h2>  Full Binary Tree </h2>
+<h3> asked by Google: </h3>
 </footer>
 
 </body>
