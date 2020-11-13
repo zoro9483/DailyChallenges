@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>DailyProblem</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, inital-scale=1">
+ <style>
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Style the header */
+header {
+    background-color: rgb(21, 34, 34);
+    padding: 30px;
+    text-align: center;
+    font-size: larger;
+    color: bisque;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: fit-content;
+    height: min-content;
+    background: chartreuse;
+    padding: 20px;
+
+}
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: disc;
+    padding: 0%;
+}
+
+article {
+    float: left;
+    padding:0%;
+    width:fit-content;
+    background-color:rgb(119, 211, 161) ;
+    height:0%;
+}
+/* Clear floats after the columns */
+section::after {
+    content: "wow";
+    display:grid ;
+    clear: both;
+}
+/* style the footer */
+footer {
+    background-color: rgb(39, 147, 155);
+    padding: 0.5px;
+    text-align: center;
+    color: rgb(220, 220, 220);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ </style>
+</head>
+
+<body >
+
+<header > <h1  >Daily Interview Pro</h1> </header>
+<p  > practicing daily interview problems made by TechLead.</p>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">1st proplem</li>
+            <li><a href="#">2st proplem</li>
+            <li><a href="#">3st proplem</li>
+            <li><a href="#">4st proplem</li>
+            <li><a href="#">5st proplem</li>
+            <li><a href="#">6st proplem</li>
+            <li><a href="#">7st proplem</li>
+            <li><a href="#">8st proplem</li>
+            <li><a href="#">10st proplem</li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>code interviwe problems</h1>
+        <p>
+            in this website we will discuss example for interview
+            question that can be asked by big companiese 
+        </p>
+        <p> 
+            big companiese like 
+        </p>
+        <p>
+            google / apple / uber / microsoft
+        </p>
+
+    </article>
+</section>
+
+<details> 
+    <summary> details </summary>
+<blockquote>
+
+    Daily, consistent practice is one of the best investments you can 
+    make for your technical career.  It will help you pass coding interviews 
+    with ease, negotiate higher compensation, and provide you flexibility in your 
+    career choices.  I consider it a life-long skill, that continues even for those 
+    with full-time jobs.
+
+</blockquote>
+</details>
+
+
+<hr>
+
+<footer>
+<h3>1st problem</h3>
+<p>First and Last Indices of an Element in a Sorted Array </p>
+<p>asked by AirBNB:</p>
+</footer>
+
+<dl>
+
+    <dt> Given a sorted array, A, with possibly duplicated elements,
+     find the indices of the first and last occurrences of a target element,
+      x. Return -1 if the target is not found.</dt
+
+<dt>Example:</dt>
+<dt>Input: A = [1,3,3,5,7,8,9,9,9,15], target = 9</dt>
+<dt>Output: [6,8]</dt>
+
+<dt>Input: A = [100, 150, 150, 153], target = 150</dt>
+<dt>Output: [1,2]</dt>
+
+<dt>Input: A = [1,2,3,4,5,6,10], target = 9</dt>
+<dt>Output: [-1, -1]</dt>
+<dt>Here is a function signature example:</dt>
+
+<dt>class Solution:</dt>
+<dt>def getRange(self, arr, target):</dt>
+
+
+<dt># Fill this in.</dt>
+<dt># Test program</dt>
+<dt>arr = [1, 2, 2, 2, 2, 3, 4, 7, 8, 8]</dt>
+<dt>x = 2</dt>
+<dt>print(Solution().getRange(arr, x))</dt>
+<dt># [1, 4]</dt>
+
+
+
+</dl>
+
+</p>
+
+<hr>
+
+<footer><h3>2nd proplem</h3>
+<p> Arithmetic Binary asked by Apple </p>
+
+</footer>
+<p>
+<dl>
+<dt> <br>you are given a binary tree representation of an Arithmetic expression
+    <br>  in this tree, each leaf is an interger value,,and a non-leaf node is one of the four 
+    <br>  operations:  '+', '-', '*', or '/'.
+    <br>  Write a function that takes this tree and evaluates the expression.
+</dt>
+<dt>Example:</dt>
+<dt>
+    <br>    *
+    <br>  / \
+    <br>  +    +
+   <br> / \  / \
+  <br> 3  2  4  5
+  
+  <br> This is a representation of the expression (3 + 2) * (4 + 5), and should return 45.
+  
+  <br> Here's a starting point:
+  
+  <br>  class Node:
+  <br>def __init__(self, val, left=None, right=None):
+   <br>  self.val = val
+     <br> self.left = left
+     <br> self.right = right
+   
+     <br> PLUS = "+"
+  <br> MINUS = "-"
+  <br> TIMES = "*"
+  <br> DIVIDE = "/"
+   
+  <br> def evaluate(root):
+  <br> # Fill this in.
+   
+   <br> tree = Node(TIMES)
+  <br> tree.left = Node(PLUS)
+  <br>tree.left.left = Node(3)
+  <br> tree.left.right = Node(2)
+  <br> tree.right = Node(PLUS)
+  <br> tree.right.left = Node(4)
+  <br>tree.right.right = Node(5)
+  <br> print evaluate(tree)
+  <br> # 45
+  
+</dt>
+</dl>
+</p>
+<hr>
+
+<article>
+<h1>3st problem</h1>
+<h2>Tree Serialization asked by Apple:</h2>
+<h3>You are given the root of a binary tree. You need to implement 2 functions:
+</h3>
+ 
+<p>
+1. serialize(root) which serializes the tree into a string representation
+2. deserialize(s) which deserializes the string back to the original tree that it represents 
+</p>
+
+<p>
+For this problem, often you will be asked to design your own serialization format. However, for simplicity,
+ let's use the pre-order traversal of the tree. Here's your starting point:
+</p>
+
+<p>
+    <br>class Node:
+    <br>def __init__(self, val, left=None, right=None):
+    <br> self.val = val
+    <br> self.left = left
+    <br> self.right = right
+ 
+    <br>def __str__(self):
+    <br>  # pre-order printing of the tree.
+    <br> result = ''
+    <br> result += str(self.val)
+    <br> if self.left:
+    <br>  result += str(self.left)
+    <br>if self.right:
+    <br>   result += str(self.right)
+    <br> return result
+ 
+    <br>def serialize(root):
+    <br># Fill this in.
+ 
+    <br>def deserialize(data):
+    <br># Fill this in.
+ 
+    <br>#     1
+    <br>#    / \
+    <br>#   3   4
+<br>#  / \   \
+<br># 2   5   7
+<br>tree = Node(1)
+<br>tree.left = Node(3)
+<br>tree.left.left = Node(2)
+<br>tree.left.right = Node(5)
+<br>tree.right = Node(4)
+<br>tree.right.right = Node(7)
+ 
+<br>print serialize(tree)
+<br># 1 3 2 # # 5 # # 4 # 7 # #
+<br>print deserialize('1 3 2 # # 5 # # 4 # 7 # #')
+<br># 132547
+</P>
+</article>
+
+<hr>
+
+<article>
+<h1>4th problem</h1>
+<h2>Reverse a Linked List</h2>
+<h3>asked by Google:</h3>
+<p>Given a singly-linked list, reverse the list. This can be done iteratively or recursively. Can you</p>
+<p>get both solutions?</p>
+<p>Example:</p>
+
+<p>
+    <br>Input: 4 -> 3 -> 2 -> 1 -> 0 -> NULL
+    <br>Output: 0 -> 1 -> 2 -> 3 -> 4 -> NULL
+    <br>class ListNode(object):
+    <br>def __init__(self, x):
+    <br>  self.val = x
+    <br>  self.next = None
+     
+    <br> # Function to print the list
+    <br> def printList(self):
+    <br>  node = self
+    <br> output = ''
+    <br>  while node != None:
+    <br>    output += str(node.val)
+    <br>    output += " "
+    <br>   node = node.next
+    <br>  print(output)
+     
+       <br> # Iterative Solution
+     <br> def reverseIteratively(self, head):
+     <br>   # Implement this.
+     
+       <br># Recursive Solution     
+     <br>def reverseRecursively(self, head):
+     <br> # Implement this.
+     
+       <br># Test Program
+       <br># Initialize the test list:
+       <br>testHead = ListNode(4)
+       <br>node1 = ListNode(3)
+       <br>testHead.next = node1
+       <br>node2 = ListNode(2)
+       <br>node1.next = node2
+       <br>node3 = ListNode(1)
+       <br>node2.next = node3
+       <br>testTail = ListNode(0)
+       <br>node3.next = testTail
+     
+       <br>print("Initial list: ")
+       <br>testHead.printList()
+       <br># 4 3 2 1 0
+       <br>testHead.reverseIteratively(testHead)
+       <br>#testHead.reverseRecursively(testHead)
+    <br>print("List after reversal: ")
+    <br>testTail.printList()
+    <br> # 0 1 2 3 4
+    
+</p>
+</article>
+
+<footer>
+    <h1>5th problem </h1>
+     <h2> Validate Balanced Parentheses </h2>
+     <h3> asked by Uber: </h3>
+</footer>
+
+<article>
+<p> Imagine you are building a compiler. Before running any code,
+     the compiler must check that the parentheses in the program are balanced.
+      Every opening bracket must have a corresponding closing bracket. 
+      We can approximate this using strings.
+</p>
+
+<p> Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+     determine if the input string is valid.
+</p>
+<p>
+    An input string is valid if:
+
+</p>
+<p> - Open brackets are closed by the same type of brackets. </p>
+<p>
+    - Open brackets are closed in the correct order.
+</p>
+<p>
+    - Note that an empty string is also considered valid.
+
+</p>
+<p>
+
+    <br>Example:
+    <br>Input: "((()))"
+    <br>Output: True
+    
+    <br>Input: "[()]{}"
+    <br>Output: True
+    
+    <br>Input: "({[)]"
+    <br>Output: False
+    <br>class Solution:
+    <br>def isValid(self, s):
+    <br>  # Fill this in.
+     
+       <br># Test Program
+    <br>s = "()(){(())"
+    <br># should return False
+    <br>print(Solution().isValid(s))
+     
+    <br>s = ""
+    <br># should return True
+    <br>print(Solution().isValid(s))
+     
+    <br> s = "([{}])()"
+    <br> # should return True 
+    <br>  print(Solution().isValid(s))<br>
+    
+
+</p>
+
+</article>
+
+<footer>
+    <h1>6th problem </h1>
+     <h2>Reverse a Linked List </h2>
+     <h3> asked by Google: </h3>
+</footer>
+
+<footer>
+    <h1>7th problem </h1>
+     <h2>  Full Binary Tree </h2>
+     <h3> asked by Google: </h3>
+</footer>
+
+
+<footer>
+    <h1>8th problem </h1>
+     <h2>  Full Binary Tree </h2>
+     <h3> asked by Google: </h3>
+</footer>
+
+</body>
+</html>
+
