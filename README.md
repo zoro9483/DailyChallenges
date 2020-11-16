@@ -1,4 +1,4 @@
-# DailyProblem
+# DailyChllenges
 a daily code problem from Daily Interview Pro to help in practise for interview questions
 it will contain 
 
