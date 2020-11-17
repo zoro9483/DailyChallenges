@@ -8,3 +8,12 @@ function hide(id){
         else
         e.style.display = 'block';
 }
+
+function question(){
+    var a = document.getElementsByClassName("#title");
+    console.log(a);
+    var b = document.getElementsByClassName("askedBy");
+    console.log(b);
+    var c = document.getElementsByClassName("discrption");
+    console.log(c)
+}
