@@ -10,10 +10,10 @@ function hide(id){
 }
 
 function question(){
-    var a = document.getElementsByClassName();
+    var a = document.getElementsByClassName(title);
     console.log(a);
-    var b = document.getElementsByClassName();
+    var b = document.getElementsByClassName(askedBy);
     console.log(b);
-
-    retuern
+    var c = document.getElementsByClassName(discrption);
+    console.log(c)
 }
