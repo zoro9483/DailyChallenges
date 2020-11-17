@@ -9,12 +9,17 @@ function hide(id){
         e.style.display = 'block';
 }
 
-var a = document.getElementsByClassName("#title").innerHTML;
+if(document.getElementById("output") != null){
+    var at=document.getElementById("output").innerHTML;
+    console.log(a);
+}
 console.log(a);
-var b = document.getElementsByClassName("#askedBy").innerHTML;
-console.log(b);
-var c = document.getElementsByClassName(".discrption").innerHTML;
-console.log(c);
+// var a = document.getElementById('output').innerHTML;
+// console.log(a);
+// var b = document.getElementsByClassName("#askedBy").innerHTML;
+// console.log(b);
+// var c = document.getElementsByClassName(".discrption").innerHTML;
+// console.log(c);
 
 function question(){
     var a = document.getElementsByClassName(".title");
