@@ -9,11 +9,11 @@ function hide(id){
         e.style.display = 'block';
 }
 
-var a = document.getElementsByClassName(".title");
+var a = document.getElementsByClassName("#title").innerHTML;
 console.log(a);
-var b = document.getElementsByClassName("askedBy");
+var b = document.getElementsByClassName("#askedBy").innerHTML;
 console.log(b);
-var c = document.getElementsByClassName("discrption");
+var c = document.getElementsByClassName(".discrption").innerHTML;
 console.log(c);
 
 function question(){
