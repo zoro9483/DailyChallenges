@@ -22,10 +22,10 @@
 <h1>choose challange level question !!</h1>
 <p>let's go</p>
 
-<a href="#"><button onclick="question();" id="zero">problem zero</button> </a>
-<button onclick="hide(id);" id="one">problem one</button>
-<button onclick="hide(id);"id="two">problem two</button>
-<button onclick="hide(id);"id="three">problem three</button>
+<button class="tablink" onclick="openPage('Home', this, 'red')">problem zero</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">problem one</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">problem two</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">problem three</button>
 <button onclick="hide(id);"id="foure">problem foure</button>
 <button onclick="hide(id);"id="five">problem five</button>
 <button onclick="hide(id);"id="six">problem six</button>
@@ -33,6 +33,26 @@
 <button onclick="hide(id);"id="eight">problem eight</button>
 <button onclick="hide(id);"id="nighn">problem nighn</button>
 <button onclick="hide(id);"id="ten">problem ten</button>
+
+<div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Home is where the heart is..</p>
+  </div>
+  <div id="News" class="tabcontent">
+    <h3>News</h3>
+    <p>Some news this fine day!</p> 
+  </div>
+  
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+  
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+  
 
 <p  id="output" hidden>Nth Fibonacci Number</p>
 <p class="askedBy" hidden> This problem was recently asked by Apple:</p>
