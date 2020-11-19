@@ -13,7 +13,7 @@ if(document.getElementById("output") != null){
     var at=document.getElementById("output").innerHTML;
     console.log(a);
 }
-console.log(a);
+
 // var a = document.getElementById('output').innerHTML;
 // console.log(a);
 // var b = document.getElementsByClassName("#askedBy").innerHTML;
