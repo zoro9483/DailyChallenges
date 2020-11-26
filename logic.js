@@ -6,35 +6,40 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
+
   coll[i].addEventListener("click", function() {
+
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+
+    if (content.style.maxHeight){
+
+      content.style.maxHeight = null;
     } else {
-      content.style.display = "block";
+      
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
 
+// function hide(id){
+//     var e = document.getElementById(id);
 
-function hide(id){
-    var e = document.getElementById(id);
+//     if(e.style.display== 'block')
+//         e.style.display = 'none';
+//         else
+//         e.style.display = 'block';
+// }
 
-    if(e.style.display== 'block')
-        e.style.display = 'none';
-        else
-        e.style.display = 'block';
-}
-
-if(document.getElementById("output") != null){
-    var at=document.getElementById("output").innerHTML;
-    console.log(a);
-}
+// if(document.getElementById("output") != null){
+//     var at=document.getElementById("output").innerHTML;
+//     console.log(a);
+// }
 
 // var a = document.getElementById('output').innerHTML;
 // console.log(a);
@@ -68,5 +73,5 @@ function openPage(pageName,elmnt,color) {
   }
   
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  // document.getElementById("defaultOpen").click();
 
