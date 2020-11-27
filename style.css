@@ -149,7 +149,7 @@ body {
 #Contact {background-color: blue;}
 #About {background-color: orange;}
 
-.collapsible {
+/* .collapsible {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -171,4 +171,4 @@ body {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-}
+} */
