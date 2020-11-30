@@ -61,7 +61,7 @@
 <h1>choose challange level question !!</h1>
 <p>let's go</p>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')">problem zero</button>
+<button class="tablink" onclick="openPage(' Shifted String', this, 'red')">Shifted String</button>
 <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">problem one</button>
 <button class="tablink" onclick="openPage('Contact', this, 'blue')">problem two</button>
 <button class="tablink" onclick="openPage('About', this, 'orange')">problem three</button>
@@ -75,9 +75,16 @@
 <button class="tablink" onclick="openPage('About', this, 'orange')">problem eleven</button>
 <!-- <button class="tablink" onclick="openPage('About', this, 'orange')">problem twelv</button> -->
 
-<div id="Home" class="tabcontent">
-    <h3>Home</h3>
-    <p>Home is where the heart is..</p>
+<div id=" Shifted String" class="tabcontent">
+    <h3>Hi, here's your problem today. This problem was recently asked by Apple:</h3>
+    <p>You are given two strings, A and B. Return whether A can be shifted some number of times to get B.    </p>
+    <p> Eg. A = abcde, B = cdeab should return true because A can be shifted 3 times to the right to get B. A = abc and B= acb should return false.</p>
+    <pre>def is_shifted(a, b):
+      # Fill this in.
+      
+    print is_shifted('abcde', 'cdeab')
+    # True </pre>
+
   </div>
   <div id="News" class="tabcontent">
     <h3>News</h3>
