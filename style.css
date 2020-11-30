@@ -138,7 +138,7 @@ body {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: rgb(236, 127, 127);
   display: none;
   padding: 100px 20px;
   height: 100%;
